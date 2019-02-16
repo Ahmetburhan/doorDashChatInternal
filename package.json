@@ -1,0 +1,27 @@
+{
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "description": "The Frontend take home project for DoorDash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api-server": "node server.js",
+    "client": "cd client && yarn start",
+    "server": "node server.js",
+    "start": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "author": "Ryan Gonzalez && Ahmet Koylan",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "~1.0.1",
+    "concurrently": "^3.6.1",
+    "express": "~4.0.0",
+    "serve": "^3.1.0"
+  },
+  "dependencies": {
+    "shortid": "^2.2.8"
+  }
+}
